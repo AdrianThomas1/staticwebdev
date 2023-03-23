@@ -17,7 +17,7 @@
 
     <script>
     (async function() {
-        const { text } = await( await fetch(`/api/message`)).json();
+        const { text } = await( await fetch(`https://at-static-api-01.azurewebsites.net/api/HttpTrigger1`)).json();
         document.querySelector('#name').textContent = text;
     }());
     </script>
